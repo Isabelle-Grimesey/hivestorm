@@ -4,4 +4,7 @@ Note: to copy file to clipboard in linux CLI:\
 To check if a package is installed:\
   `apt list -a package_name`
 To remove a package:\
-  `apt-get remove package_name`
+  `apt-get remove --purge package_name`\
+Remove unused packages and archives:\
+  `apt-get autoremove`\
+  `apt-get clean`\

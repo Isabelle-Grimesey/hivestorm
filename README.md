@@ -15,7 +15,7 @@ Remove unused packages and archives:\
 Check for unlocked login of default accounts with no initial password:\
 \
   `sudo mawk -F: '$2 != "!!" && $2 != "!" && $2 != "!*" && $2 != "*!"' /etc/shadow | sudo mawk -F: '$2 == "*"'`\
-For each user account from the results of the above command, either:\
+For each user account from the results of the above command, either lock it or set a password:\
 \
 Lock any account that you don't need to use right away:\
   `usermod -L <username>`\

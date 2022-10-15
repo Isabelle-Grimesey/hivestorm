@@ -13,6 +13,8 @@ Check for unlocked login of default accounts with no initial password:\
 Get hashes of set passwords (can be used in conjunction with rainbow tables for auditing):\
   sudo mawk -F: '$2 != "!!" && $2 != "!" && $2 != "!*" && $2 != "*!"' /etc/shadow | sudo mawk -F: '$2 != "*"'
 For each user account from the results of the above command, Lock any account that you don't need to use right away:\
-  `usermod -L <username>`
+  `usermod -L <username>`\
+If it turns out you need to use an account that you locked, unlock it with:\
+  `usermod -U <username>`\
 For other accounts, reset the password:\
   `passwd <username>`

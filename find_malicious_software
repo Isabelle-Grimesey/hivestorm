@@ -1,0 +1,5 @@
+#!/usr/bin/bash
+#searches entire file system for names of common hacker tools.
+for str in "nmap" "zenmap" "apache2" "nginx" "lighttpd" "wireshark" "tcpdump" "netcat-traditional" "nikto" "ophcrack" "john" "ripper" "rainbow" "invicti" "fortify" "webinspect" "cain" "abel" "nessus" "kismet" "netstumbler" "acunetix" "netsparker" "intruder" "metsploit" "aircrack-ng" "wireshark" "openvas" "sqlmap" "ettercap: "maltego" "burp" "angry" "solarwinds" "traceroute" "tracert" "liveaction" "qualysguard" "hashcat" "l0phtcrack" "ikecrack" "sboxr" "medusa" "crack"; do
+	find / -name $str
+done
